@@ -6,7 +6,7 @@ from django.db import models
 class Ticket(models.Model):
     # Your Ticket model definition goes here
     pass
-
+ 
 
 class Review(models.Model):
     ticket = models.ForeignKey(to=Ticket, on_delete=models.CASCADE)
