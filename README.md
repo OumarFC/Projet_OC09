@@ -60,7 +60,7 @@ Activez votre environnement virtuel.
 cd < myenv\scripts\ctivate.bat
 ```
 
-##packages
+## packages
 
 Le programme utilise plusieurs librairies externes, et modules de Python, qui sont répertoriés dans le fichier ```requirements.txt```
 Sous windows lancer la commande:
