@@ -10,7 +10,7 @@
 + [Installation des packages](#Packages)
 + [Le fichier .gitignore](#gitignore)
 + [Lancement](#Démarrage)
-+ [Flake8](#Rapport flake8)
++ [Rapport flake8 ](#Flake8)
 
 
 ## Objectif
@@ -65,12 +65,11 @@ cd < myenv\scripts\ctivate.bat
 Le programme utilise plusieurs librairies externes, et modules de Python, qui sont répertoriés dans le fichier ```requirements.txt```
 Sous windows lancer la commande:
 
+```
 pip install -r requirement.txt
-
 ```
 afin d'installer toutes les librairies.
 
-```
 ## gitignore
 
 Exclure l'environnement virtuel des commits sur le serveur distant 
@@ -94,5 +93,5 @@ Entrez l'adresse suivante dans le navigateur : http:/127.0.0.1:8000/
 Vous pouvez vous connecter à l'interface d'administration via le compte admin "itecglobalservices"  mot de passe "dyste222" (sans les doubles quotes).
 
 
-## Rapport flake8
+##Flake8
 
