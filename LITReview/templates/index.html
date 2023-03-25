@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    {% if title%}
+        <title>LITReview - {{ title }}</title>
+    {% else %}
+        <title>LITReview</title>
+    {% endif %} 
+</head>
+<body>
+    <header>
+        <h1 id="mainTitle">LITReview</h1>
+        <nav>
+          {% if user.is_authenticated %}
+            <div id="nav__username">Utilisateur connecté : {{ user.username }}
+                <div id="header_menu">
+                    <a id="nav__flux" href="{% url 'flux'%}">Flux</a>
+                    <a id="nav__post" href="{% url 'posts'%}">Posts</a>
+                    <a id="nav__abo" href="{% url 'subscriptions' %}">Abonnements</a>
+                    <a id="nav__logout" href="{% url 'logout' %}">Se déconnecter</a>
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="mainSection">
+    {% if messages %}
+       {% for message in messages %}
+        {{message}}
+       {% endfor %}
+    {% endif %}
+
+    {% block content %}
+    {% endblock content %}
+    </section> 
+</body>
+</html>

@@ -1,0 +1,137 @@
+header 
+{
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+
+body
+{
+    border: 1px solid black;
+    padding-bottom: 50px;
+}
+
+#mainTitle
+{
+    text-align: center;
+}
+
+#nav__flux, #nav__abo, #nav__logout, #nav__post
+{
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+} 
+
+#header_menu
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.mainSection
+{
+    width: 75%;
+    min-width: 400px;
+    margin: auto;
+}
+
+h1
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#block__connection
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#block__registration
+{
+    width: 50%;
+}
+
+#block__login
+{
+    width: 50%;
+}
+
+#ticket_description
+{
+    width: 400px;
+}
+
+#ticket_title
+{
+    width: 400px;
+    height: 400px;
+}
+
+.flux__nav
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.flux__nav__link
+{
+    border: 1px, solid, black;
+    margin-left: 15px;
+}
+
+form
+{
+    border: 1px, solid, black;
+    text-align: justify;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.ticket
+{
+    border: 1px solid black;
+    margin: 15px;
+    padding: 15px;
+}
+
+.review
+{
+    border: 1px solid black;
+    margin: 15px;
+    padding: 15px;
+}
+
+#nav__username
+{
+    text-align: left;
+    margin-left: 15px;
+}
+
+.forms
+{
+    text-align: center;
+    text-align: justify;
+}
+
+.btn
+{
+    border: 1px, solid, black;
+    margin-left: 15 px;
+}
+
+.create_review
+{
+    border: 1px, solid, black;
+}
+
+.subscriber_list
+{
+    display: flex;
+}
