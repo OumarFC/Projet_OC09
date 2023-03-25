@@ -93,5 +93,5 @@ Entrez l'adresse suivante dans le navigateur : http:/127.0.0.1:8000/
 Vous pouvez vous connecter à l'interface d'administration via le compte admin "itecglobalservices"  mot de passe "dyste222" (sans les doubles quotes).
 
 
-##Flake8
+## Flake8
 
