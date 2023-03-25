@@ -33,14 +33,14 @@ Le site doit pouvoir réaliser les point ci-desous listés :
 1- Télécharger et installer la dernière version de Python à cette adresse :
 	https://www.python.org/downloads/
 		 
-2 - Depuis votre terminal sous windows ( cmd )  
-
-Verifiez que vous avez pip installer sur la machine
-pour cela lancer la commande 
+2 - Depuis votre terminal sous windows ( cmd ), 
+	Verifiez que vous avez pip installer sur la machine
+	
+	pour cela lancer la commande 
 
 ```pip --help```
 
-- Créer votre dossier projet sous windows
+3 - Créer votre dossier projet sous windows
 	     
 ```
 mkdir < MyProject09 > 
@@ -50,7 +50,7 @@ placez-vous dans le repertoire projet
 ```
 cd < MyProject09 > 
 ```
-Créer votre environnement virtuel
+4 - Créer votre environnement virtuel
 ```
 pip -m venv < myenv > 
 ```
