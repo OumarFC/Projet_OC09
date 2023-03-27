@@ -4,17 +4,22 @@
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <div class="forms">
-            <div>{{ form }}</div>
-            <input type="submit" value="Envoyer">
+            <tr>
+                <td>{{ form }}</td>
+                <td><input type="submit" value="Envoyer"></td>
+            </tr>
         </div> 
     </form>
     <h2 style="text-align: center;">Abonnements</h2>
-    <ul>
-        {% for user in user_follows %}
+    <table>
+        <tr>
+            {% for user in user_follows %}
             {% if  user.user == current_user%}
-                <li class="subscriber_list">{{ user.followed_user }}</li><a href={% url 'subscriptions_delete' user.pk %}>Se désabonner</a> 
-            {% endif %}
-    </ul>    
+            <td>{{ user.followed_user }}</td>
+            <td><a href={% url 'subscriptions_delete' user.pk %}>Se désabonner</a> </td>
+             {% endif %}
+        </tr>
+    </table>
         {% empty %}
             <p>Vous ne suivez aucun utilisateurs</p> 
         {% endfor %}

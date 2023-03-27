@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 
 from .models import UserFollows
 
-
 class SubscriptionsForm(forms.ModelForm):
     class Meta:
         model = UserFollows
