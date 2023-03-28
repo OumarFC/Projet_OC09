@@ -95,3 +95,9 @@ Vous pouvez vous connecter à l'interface d'administration via le compte admin "
 
 ## Flake8
 
+Le projet contient un rapport flake8 qui n'affiche aucune violation des directives de style de code PEP 8. Pour executer un autre rapport depuis windows Toujours à la racine du projet:
+
+cd < MyProject04 > 
+flake8 --format=html --htmldir=flake8_rapport
+Le fichier setup.cfg contient d'autres parametres pour le traitement flake8
+
